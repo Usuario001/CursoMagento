@@ -1,0 +1,22 @@
+{
+    "name": "pixelpro/module-holamundo",
+    "description": "Hola mundo module",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "usuario001",
+            "email": "patinogutierrez@icloud.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Pixelpro\\Holamundo\\": ""
+        }
+    }
+}

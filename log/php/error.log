@@ -1,0 +1,16 @@
+[20-Feb-2019 16:43:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'prueba.core_config_data' doesn't exist in /var/www/html/vendor/magento/zendframework1/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /var/www/html/vendor/magento/zendframework1/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /var/www/html/vendor/magento/framework/DB/Statement/Pdo/Mysql.php(93): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /var/www/html/vendor/magento/zendframework1/library/Zend/Db/Statement.php(303): Magento\Framework\DB\Statement\Pdo\Mysql->_execute(Array)
+#3 /var/www/html/vendor/magento/zendframework1/library/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /var/www/html/vendor/magento/zendframework1/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `main_ta...', Array)
+#5 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(541): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `main_ta...', Array)
+#6 /var/www/html/v in /var/www/html/vendor/magento/zendframework1/library/Zend/Db/Statement/Pdo.php on line 235
+[20-Feb-2019 18:27:00 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. in /var/www/html/vendor/magento/framework/Code/Generator.php:135
+Stack trace:
+#0 /var/www/html/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/vendor/magento/framework/Code/Reader/Class in /var/www/html/vendor/magento/framework/Code/Generator.php on line 135
