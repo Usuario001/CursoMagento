@@ -14,3 +14,10 @@ Stack trace:
 #1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
 #2 [internal function]: spl_autoload_call('Magento\\Framewo...')
 #3 /var/www/html/vendor/magento/framework/Code/Reader/Class in /var/www/html/vendor/magento/framework/Code/Generator.php on line 135
+[21-Feb-2019 19:53:21 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. in /var/www/html/vendor/magento/framework/Code/Generator.php:135
+Stack trace:
+#0 /var/www/html/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/vendor/magento/framework/Code/Reader/Class in /var/www/html/vendor/magento/framework/Code/Generator.php on line 135
