@@ -2,7 +2,7 @@
 <page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 	<body>
 		<referenceContainer name="content">
-			<block class="Pixelpro\Holamundo\Block\Index\Test" name="index.test" template="Pixelpro_Holamundo::index/test.phtml"/>
+			<block class="Pixelpro\Holamundo\Block\Test" name="index_test" template="Pixelpro_Holamundo::test.phtml"/>
 		</referenceContainer>
 	</body>
 </page>

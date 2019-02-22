@@ -1,7 +1,7 @@
 web:
     image: rus0/magento2-image-7.1:latest
     ports:
-        - 8005:80
+        - 8001:80
     volumes:
         - ~/.ssh:/home/magento2/.ssh
         - ./:/var/www/html
